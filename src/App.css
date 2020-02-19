@@ -1,22 +1,61 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  background: transparent
+}
+.name-board {
+  /* color: white; */
+  /* border: 2px solid black; */
+}
+.all-boards {
+  /* border: 2px solid red; */
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.boardList {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 4rem;
+  overflow: auto;
+  overflow-y: hidden
 }
 
-.App-link {
-  color: #09d3ac;
+.create-list {
+  margin: 0 1rem 0 1rem
+}
+
+.create-list-text {
+  width: 15vw
+}
+
+.list-title {
+  display: flex;
+  margin:1rem 0 0 1rem;
+  width:100%;
+}
+.list-name {
+  flex: 4;
+  padding-left: 1rem;
+  font-weight: bold;
+  width: 100%
+}
+.delete-button {
+  flex: 1;
+  /* margin-left: 0.8rem; */
+  /* margin-right: 1rem; */
+  color: red;
+  font-size: 26px
+}
+.list {
+  height: 80vh;
+  width: 280px;
+  overflow: auto; 
+  overflow-x: hidden;
+  background-color:#ebecf0;
+  border-radius: 5px;
+  box-shadow: 1px 10px 5px 3px black;
+  margin-left: 1.5rem
+  
 }
